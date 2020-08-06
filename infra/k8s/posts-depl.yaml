@@ -20,12 +20,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: event-bus-src
+  name: posts-clutserip-srv
 spec:
   selector:
-    app: event-bus
+    app: posts
   ports:
-    - name: event-bus
+    - name: posts
       protocol: TCP
-      port: 4005
-      targetPort: 4005
+      port: 4000
+      targetPort: 4000
